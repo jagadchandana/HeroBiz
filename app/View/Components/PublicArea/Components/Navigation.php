@@ -23,6 +23,8 @@ class Navigation extends Component
      */
     public function render()
     {
-        return view('public-area.components.navigation');
+        return view('public-area.components.navigation',[
+            'cRout'=>'request()->route()->getName()'
+        ]);
     }
 }

@@ -11,11 +11,11 @@
       <nav id="navbar" class="navbar">
         <ul>
 
-          <li><a class="nav-link scrollto" href="#">Home</i></a>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="{{ $cRout == 'home'? '':route('home-index') }}">Home</i></a>
+          <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#about">About</a></li>
+          <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="{{ route('contact-index') }}">Contact</a></li>
         </ul>
