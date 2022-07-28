@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Contact\ContactController;
 use App\Http\Controllers\Home\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home-index');
+
+///Contact
+Route::get('/contact', [ContactController::class, 'index'])->name('contact-index');

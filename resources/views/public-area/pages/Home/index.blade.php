@@ -69,10 +69,6 @@
             @include('public-area.pages.Home.components.recent-blog-posts')
            <!-- End Recent Blog Posts Section -->
         
-            <!-- ======= Contact Section ======= -->
-            @include('public-area.pages.Home.components.contact')
-           <!-- End Contact Section -->
-        
           </main><!-- End #main -->
     </x-slot>
 
