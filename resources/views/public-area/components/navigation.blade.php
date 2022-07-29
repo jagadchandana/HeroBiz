@@ -16,7 +16,7 @@
           <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#services">Services</a></li>
           <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="{{ route('bloger-index') }}">Blog</a></li>
           <li><a class="nav-link scrollto" href="{{ route('contact-index') }}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Blog\BlogController;
 use App\Http\Controllers\MemberArea\Dashboard\DashbordController as HomeDashbordController;
 use App\Http\Controllers\PublicArea\Contact\ContactController as ContactController;
 use App\Http\Controllers\PublicArea\Home\HomeController as HomeController;
@@ -23,4 +24,7 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact-index
 
 
 ///Dashboard
-Route::get('/dashboard', [HomeDashbordController::class, 'index'])->name('dashbord');
+Route::get('/dashbord', [HomeDashbordController::class, 'index'])->name('dashbord');
+
+///Blog
+Route::get('/bloger', [BlogController::class, 'index'])->name('bloger-index');
