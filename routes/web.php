@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\Blog\BlogController;
-use App\Http\Controllers\MemberArea\Dashboard\DashbordController as HomeDashbordController;
-use App\Http\Controllers\PublicArea\Contact\ContactController as ContactController;
-use App\Http\Controllers\PublicArea\Home\HomeController as HomeController;
+use App\Http\Controllers\MemberArea\Dashboard\DashbordController;
+use App\Http\Controllers\PublicArea\Contact\ContactController;
+use App\Http\Controllers\PublicArea\Home\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
+
+
+
+
+
 Route::get('/', [HomeController::class, 'index'])->name('home-index');
 
 ///Contact
@@ -24,7 +36,10 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact-index
 
 
 ///Dashboard
-Route::get('/dashbord', [HomeDashbordController::class, 'index'])->name('dashbord');
+Route::get('/dashbord', [DashbordController::class, 'index'])->name('dashbord');
 
 ///Blog
 Route::get('/bloger', [BlogController::class, 'index'])->name('bloger-index');
+
+
+require __DIR__.'/auth.php';

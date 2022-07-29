@@ -4,7 +4,7 @@ namespace App\View\Components\MemberArea\Layouts;
 
 use Illuminate\View\Component;
 
-class AppLaout extends Component
+class MemberLayout extends Component
 {
     /**
      * Create a new component instance.

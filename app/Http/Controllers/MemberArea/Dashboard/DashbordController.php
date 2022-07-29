@@ -3,14 +3,12 @@
 namespace App\Http\Controllers\MemberArea\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\MemberArea\ParentController;
 use Illuminate\Http\Request;
 
-class DashbordController extends Controller
+class DashbordController extends ParentController
 {
-    /**
-     * @return [type]
-     */
-    public function index(){
-        return view('member-area.layouts.member-layout');
-    }
+   public function index(){
+        return view('member-area.pages.home.dashbord');
+   }
 }
