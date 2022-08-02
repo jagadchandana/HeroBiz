@@ -3,9 +3,10 @@
 namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\MemberArea\ParentController;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class BlogController extends ParentController
 {
     /**
      * Display a listing of the resource.

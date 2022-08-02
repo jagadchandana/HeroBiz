@@ -16,6 +16,7 @@
           <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#services">Services</a></li>
           <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="{{ $cRout == 'home' ? '':route('home-index') }}#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('request-index') }}">Request Membership</a></li>
           <li><a href="{{ route('bloger-index') }}">Blog</a></li>
           <li><a class="nav-link scrollto" href="{{ route('contact-index') }}">Contact</a></li>
         </ul>
