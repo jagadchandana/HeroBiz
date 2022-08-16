@@ -4,7 +4,7 @@
         <section id="hero-animated" class="hero-animated d-flex align-items-center">
             <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
               <img src="{{ asset('img/hero-carousel/hero-carousel-3.svg') }}" class="img-fluid animated">
-              <h2>Welcome to <span>HeroBiz</span></h2>
+              <h2>Welcome  <span>app</span></h2>
               <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
               <div class="d-flex">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>

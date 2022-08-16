@@ -1,6 +1,6 @@
 <?php
 
-namespace axc\Gears;
+namespace Axc\Member;
 
 use App\Models\Member;
 use App\Models\product;
